@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bashan.godot.facebook">
+
+    <application>
+
+        <meta-data
+            android:name="org.godotengine.plugin.v1.godot-facebook"
+            android:value="com.bashan.godot.facebook.GodotFacebook" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/godot_project_name_string" />
+
+    </application>
+
+</manifest>

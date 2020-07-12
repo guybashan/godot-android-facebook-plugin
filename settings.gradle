@@ -1,0 +1,4 @@
+include ':facebook-plugin'
+include ':app'
+include ':app', ':godot-lib.release'
+rootProject.name = "godot-android-facebook-plugin"
