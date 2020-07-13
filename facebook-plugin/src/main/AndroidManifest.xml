@@ -4,7 +4,7 @@
     <application>
 
         <meta-data
-            android:name="org.godotengine.plugin.v1.godot-facebook"
+            android:name="org.godotengine.plugin.v1.GodotFacebook"
             android:value="com.bashan.godot.facebook.GodotFacebook" />
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"

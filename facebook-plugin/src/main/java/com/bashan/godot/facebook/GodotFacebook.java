@@ -308,7 +308,7 @@ public class GodotFacebook extends GodotPlugin {
     @NonNull
     @Override
     public String getPluginName() {
-        return "Godot-Facebook";
+        return "GodotFacebook";
     }
 
     @NonNull
