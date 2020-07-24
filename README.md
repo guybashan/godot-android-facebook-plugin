@@ -8,6 +8,19 @@ This is Android Facebook plugin for Godot 3.2.2 or higher.
 * On Godot platform choose: Project -> Export -> Options and make sure turn on the "Use Custom Build" and "Godot Facebook" on the "Plugins" section:
 ![Annotation 2020-07-24 121927](https://user-images.githubusercontent.com/3739222/88377830-8c48c300-cda8-11ea-8cf1-638bb1c230ee.png)
 
+## Basic Example in Godot (GDScript)
+```
+    const fb_app_id = "12345.."
+    var fb
+	if (Engine.has_singleton("GodotFacebook")):
+		print("Facebook was detected")
+		fb = Engine.get_singleton("GodotFacebook")
+		fb.init(fb_app_id)
+		fb.setFacebookCallbackId(get_instance_id())
+	else:
+		print("Facebook was not detected")
+```
+
 ## Api Reference
 
 **Functions:**
