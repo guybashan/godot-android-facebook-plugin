@@ -11,7 +11,7 @@ This is Android Facebook plugin for Godot 3.2.2 or higher.
 ## Api Reference
 
 **Functions:**
-``
+```
 init(app_id)
 appInvite(app_link_url, preview_image_url)
 setFacebookCallbackId(get_instance_ID())
@@ -19,11 +19,11 @@ getFacebookCallbackId()
 login()
 logout()
 isLoggedIn()  
-``  
+```
 
 **Callback functions:**
-``
+```
 login_success(token)
 login_cancelled()
 login_failed(error)
-``
+```
