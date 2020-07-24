@@ -12,13 +12,13 @@ This is Android Facebook plugin for Godot 3.2.2 or higher.
 ```
     const fb_app_id = "12345.."
     var fb
-	if (Engine.has_singleton("GodotFacebook")):
-		print("Facebook was detected")
-		fb = Engine.get_singleton("GodotFacebook")
-		fb.init(fb_app_id)
-		fb.setFacebookCallbackId(get_instance_id())
-	else:
-		print("Facebook was not detected")
+    if (Engine.has_singleton("GodotFacebook")):
+        print("Facebook was detected")
+        fb = Engine.get_singleton("GodotFacebook")
+        fb.init(fb_app_id)
+        fb.setFacebookCallbackId(get_instance_id())
+    else:
+        print("Facebook was not detected")
 ```
 
 ## Api Reference
