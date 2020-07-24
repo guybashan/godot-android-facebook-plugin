@@ -1,7 +1,7 @@
 # Godot Android Facebook Plugin
 This is Android Facebook plugin for Godot 3.2.2 or higher.
 
-# How to use
+## How to use
 * On your Godot project install android build template. You can follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html)
 * Go to Releases (on the right of this repository page) and download a released version. It is a ZIP file containing 2 files: "aar" of the plugin and "gdap" file describing it,
 * Extract the contents of the released ZIP file to res://android/plugins directory of your Godot project
