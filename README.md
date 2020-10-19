@@ -26,6 +26,9 @@ This is Android Facebook plugin for Godot 3.2.2 or higher.
         fb = Engine.get_singleton("GodotFacebook")
         fb.init(fb_app_id)
         fb.setFacebookCallbackId(get_instance_id())
+        
+        var permission = ["public_profile","email"]
+        fb.login(permission)
     else:
         print("Facebook was not detected")
 ```
