@@ -53,11 +53,11 @@ public class GodotFacebook extends GodotPlugin {
             public void run() {
                 try {
                     FacebookSdk.setApplicationId(key);
-                    FacebookSdk.sdkInitialize(activity.getApplicationContext());
+                    FacebookSdk.sdkInitialize(activity.getActivity().getApplicationContext());
 
                     callbackManager = CallbackManager.Factory.create();
-                    fbLogger = AppEventsLogger.newLogger(activity.getApplicationContext(), key);
-                    requestDialog = new GameRequestDialog(activity);
+                    fbLogger = AppEventsLogger.newLogger(activity.getActivity().getApplicationContext(), key);
+                    requestDialog = new GameRequestDialog(activity.getActivity());
                     requestDialog.registerCallback(callbackManager, new FacebookCallback<GameRequestDialog.Result>() {
                         public void onSuccess(GameRequestDialog.Result result) {
                             String id = result.getRequestId();
